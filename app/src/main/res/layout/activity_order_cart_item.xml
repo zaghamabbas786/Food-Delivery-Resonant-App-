@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderCartItem">
+
+    <ImageView
+        android:id="@+id/cartorderimg_id"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/cartordername_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Name :"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/cartorderprice_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product price : 5"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/cartorder_total_price_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total price : 5"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"/>
+
+
+
+    <EditText
+        android:id="@+id/shipping_address_id"
+        android:layout_width="match_parent"
+        android:hint="Your shipping address"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <Button
+          android:id="@+id/cartorder_increment_id"
+          android:layout_width="40dp"
+          android:layout_height="wrap_content"
+          android:textSize="20dp"
+          android:layout_marginTop="20dp"
+          android:padding="5dp"
+          android:text="+"/>
+
+      <TextView
+          android:id="@+id/cartorder_item_id"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="0"
+          android:textSize="25dp"
+          android:textStyle="bold"
+          android:inputType="number"
+          android:layout_marginHorizontal="20dp"
+          android:layout_marginTop="20dp"/>
+
+      <Button
+          android:id="@+id/cartorder_decrement_id"
+          android:layout_width="40dp"
+          android:layout_height="wrap_content"
+          android:textSize="20dp"
+          android:layout_marginTop="20dp"
+          android:padding="5dp"
+          android:text="-"/>
+  </LinearLayout>
+
+    <Button
+        android:id="@+id/cartorder_ordernow_id"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+
+        android:text="Order Now"/>
+
+</LinearLayout>

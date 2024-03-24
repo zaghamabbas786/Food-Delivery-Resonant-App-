@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderDetailAcitivity">
+
+    <ImageView
+        android:id="@+id/order_detail_image_id"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/c_order_detailname_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Product Nmae"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/c_order_detail_price_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Product price"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/order_recived"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:text="Recived"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/recived_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Recived Successfully"
+        android:textColor="#25F025"
+        android:textSize="25dp"
+        android:visibility="invisible" />
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/google_mapView_tracker"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

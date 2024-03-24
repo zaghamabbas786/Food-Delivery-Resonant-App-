@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddProduct">
+
+    <ImageView
+        android:id="@+id/add_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+
+        />
+    <EditText
+        android:id="@+id/add_price"
+        android:layout_width="match_parent"
+        android:hint="Price"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/add_name"
+        android:layout_width="match_parent"
+        android:hint="Product name"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/restorant_adress"
+        android:layout_width="match_parent"
+        android:hint="Restorant adress"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/upload"
+        android:text="upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
